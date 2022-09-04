@@ -64,10 +64,16 @@ export const GlobalStyle = createGlobalStyle`
     .react-modal-content {
         width: 100%;
         max-width: 576px;
-        background: #D9D9D9;
         padding: 3rem;
         position: relative;
-        border-radius: .25rem;
+        border-radius: 1rem;
+        color: white;
+
+        background-color: rgba(14, 38, 61, 0.2);
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+        border: 2px solid rgb(14, 38, 61);
     }
 
     .react-modal-close {
@@ -81,5 +87,18 @@ export const GlobalStyle = createGlobalStyle`
         &:hover {
             filter: brightness(0.8);
         }
+    }
+
+    .ReactModal__Overlay {
+        opacity: 0;
+        transition: opacity 100ms ease-in-out;
+    }
+
+    .ReactModal__Overlay--after-open {
+        opacity: 1;
+    }
+
+    .ReactModal__Overlay--before-close {
+        opacity: 0;
     }
 `;

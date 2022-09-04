@@ -8,7 +8,7 @@ export const Content = styled.div`
     max-width: 1440px;
     margin: 0 auto;
 
-    padding: 1rem 5rem;
+    padding: 6rem 5rem;
 
     h1 {
         font-weight: 600;

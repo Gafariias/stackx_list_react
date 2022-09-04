@@ -30,6 +30,6 @@ export const InfoUserContainer = styled.div`
         margin: 1rem 0;
         font-size: 1rem;
         line-height: 1.6rem;
-        color: var(--dark-600);
+        color: white;
     }
 `;

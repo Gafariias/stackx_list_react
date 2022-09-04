@@ -34,7 +34,7 @@ export function Home() {
     useEffect(() => {
         axios.get('https://randomuser.me/api/', {
             params: {
-                results: 100,
+                results: 10,
                 nat: 'br'
             }
         })
